@@ -297,7 +297,6 @@ body {
   margin-bottom: 20px;
   display: inline-flex;
   align-items: center;
-  margin-left: 18px;
 }
 
 .container-section-one-p::before {
@@ -315,7 +314,6 @@ body {
   letter-spacing: 0.05em;
   color: #fff;
   margin-bottom: 44px;
-  margin-left: 18px;
 }
 
 .container-section-one-ul {
