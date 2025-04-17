@@ -36,7 +36,8 @@ button {
   cursor: pointer;
 }
 
-img {
+img,
+.bg-common {
   display: block;
   max-width: 100%;
   height: auto;
@@ -112,9 +113,6 @@ body {
   width: 480px;
   height: 580px;
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 0;
   padding-left: 10px;
   padding-right: 10px;
@@ -259,6 +257,132 @@ body {
   border-radius: 25px;
   width: 160px;
   height: 40px;
+  background-color: #ff6c00;
+  color: #fff;
+}
+
+.online-booking-btn:focus {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  background-color: #ff6c00;
+  color: #fff;
+}
+
+/* container-section-one */
+
+.container-section-one {
+  background-image: url("../images/section-one2-480px.png");
+  width: 480px;
+  height: 738px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.container-section-one-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.container-section-one-p {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 18px;
+}
+
+.container-section-one-p::before {
+  content: "";
+  display: inline-block;
+  width: 60px; /* Довжина лінії */
+  height: 1px; /* Товщина лінії */
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.container-section-one-h {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 44px;
+  margin-left: 18px;
+}
+
+.container-section-one-ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 418px;
+  height: 360px;
+  gap: 20px;
+  margin-bottom: 34px;
+}
+
+.container-section-one-li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.service-name {
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.6);
+  margin: 0 4px;
+}
+
+.service-price {
+  white-space: nowrap;
+  color: #9da4bd;
+  font-size: 14px;
+}
+
+.container-section-one-btn {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+.container-section-one-btn:focus {
+  border: 1px solid #ff6c00;
+  background-color: #ff6c00;
+  color: #fff;
+}
+
+.container-section-one-btn:hover {
+  border: 1px solid #ff6c00;
   background-color: #ff6c00;
   color: #fff;
 }
