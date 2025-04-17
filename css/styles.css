@@ -1,0 +1,447 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-style: normal;
+}
+
+button {
+  color: currentColor;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a,
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  min-width: 350px;
+  max-width: 411px;
+  padding: 80px 10px;
+}
+
+body {
+  color: black;
+  max-width: 411px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+  background: transparent;
+}
+
+.auth-buttons,
+.menu {
+  display: none;
+}
+
+.svg-logo {
+  background-color: transparent;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: space-between;
+}
+
+.main-logo-text {
+  margin-left: 25px;
+}
+
+.container-section-one,
+.container-section-two,
+.container-section-three,
+.container-section-four,
+.container-section-fouter,
+.container-section-five,
+.container-section-designer,
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+/* відкриття мобільного меню ксс ПОЧАТОК */
+/* В стилях додаємо накладку для мобільного меню */
+.mobile-menu-overlay {
+  display: none; /* Спочатку накладка прихована */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9; /* Щоб вона була поверх основного контенту */
+}
+
+.mobile-menu.open ~ .mobile-menu-overlay {
+  display: block; /*Показати накладку, коли меню відкрите  */
+}
+
+/* Мобільне меню */
+.mobile-menu {
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Початково приховане за межами екрану */
+  width: 60%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 10; /* Вище накладки */
+  transition: right 0.5s ease-in-out;
+}
+
+.mobile-menu.open {
+  right: 0; /* Відкривається в межах екрану */
+}
+
+.close-mobile-menu {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.mobile-menu-btn {
+  text-align: right;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.mobile-menu-link {
+  color: #22343d;
+}
+
+.mobile-menu-social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.mobile-full-item {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+}
+
+.main-logo-button-svg {
+  background-color: transparent;
+}
+
+.burger-menu {
+  background-color: transparent;
+}
+
+/* відкриття мобільного меню ксс КІНЕЦЬ */
+
+.social-title {
+  margin-bottom: 20px;
+}
+
+.social-icons-two {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+/* section-header Секція хедер */
+/* main-foto Секція головного фото */
+.container-main-foto {
+  font-size: 45px;
+  background-image: url("../images/global-business-internet-network411x274.jpg");
+  color: aliceblue;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+/* section-one Секція один */
+/* section-two Секція два */
+.container-section-two {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* section-three - Секція три */
+
+.container-section-three-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  width: 390px;
+  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок, якщо не вміщуються */
+}
+
+.container-section-three-ul-all {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container-section-three-ul .container-section-three-li {
+  position: relative;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Перешкоджає стисненню елементів */
+  width: 150px;
+}
+
+/* Сходинки — для Фронтенду */
+.container-section-three-ul .container-section-three-li:nth-child(1) {
+  transform: translateX(0px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(2) {
+  transform: translateX(35px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(3) {
+  transform: translateX(65px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(4) {
+  transform: translateX(100px);
+}
+.container-section-three-ul .container-section-three-li:nth-child(5) {
+  transform: translateX(150px);
+}
+
+/* Сходинки — для Інструментів */
+.container-section-three-ul-two .container-section-three-li:nth-child(1) {
+  transform: translateX(0px);
+}
+.container-section-three-ul-two .container-section-three-li:nth-child(2) {
+  transform: translateX(100px);
+}
+.container-section-three-ul-two .container-section-three-li:nth-child(3) {
+  transform: translateX(200px);
+}
+
+/* Додавання тире перед кожним елементом списку */
+.container-section-three-li::before {
+  content: "-   "; /* Тире перед кожним елементом */
+  font-size: 20px; /* Розмір тире можна налаштувати */
+  color: black; /* Колір тире */
+}
+
+.container-section-three-h {
+  font-size: 35px;
+}
+
+.container-section-three-p {
+  font-size: 25px;
+}
+
+/* section-four Секція чотири */
+.container-section-four-ul-all {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project-list-h3 {
+  margin-bottom: 10px;
+}
+
+.project-list-p-opis {
+  margin-bottom: 6px;
+}
+
+.four-section-image-container {
+  margin-bottom: 8px;
+  border: 2px solid #904596;
+  border-radius: 12px;
+}
+
+.container-section-four-p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.container-section-four-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-section-four-figma-www {
+  color: #ab65b3;
+}
+
+.project-list,
+.project-list-five {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+/* section-five Секція пять */
+.container-section-five {
+  padding-top: 0;
+}
+
+.container-section-five-h3 {
+  margin-bottom: 10px;
+}
+
+.container-section-five-opis {
+  margin-bottom: 8px;
+}
+
+.container-section-five-teh {
+  margin-bottom: 6px;
+}
+
+.container-section-five-ul-all {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-section-five-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.five-section-image-container {
+  margin-bottom: 8px;
+  border: 2px solid #904596;
+  border-radius: 12px;
+}
+
+/* Кнопка показати ще */
+.project-item {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.project-item.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#load-more-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background-color: #0077ff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#load-more-btn:hover {
+  background-color: #005ccc;
+}
+
+/* section-designer Секція дизайнер */
+.container-section-designer {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+}
+
+/* section-fouter Секція футер */
+
+.social-icons-two {
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-footer {
+  width: 36px;
+  height: 36px;
+}
+
+/* Стрілки для прокручування */
+
+/* CSS: позиціонуємо кнопку і ховаємо за замовчуванням */
+.scroll-buttons {
+  position: fixed;
+  bottom: 20px; /* відступ від низу */
+  right: 20px; /* відступ від правого краю */
+  z-index: 1000;
+}
+
+.scroll-btn {
+  display: none; /* ховаємо кнопку спочатку */
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #993e90, #ab65b3);
+  color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); */
+  transition: opacity 0.3s ease;
+}
+
+.scroll-btn.show {
+  display: block; /* показуємо коли додається клас .show */
+}
