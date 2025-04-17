@@ -151,6 +151,7 @@ body {
   position: absolute;
   left: 0;
   padding-left: 31px;
+  color: rgba(157, 164, 189, 0.6);
 }
 
 .container-header-p-one {
@@ -177,14 +178,6 @@ body {
   font-size: 48px;
   letter-spacing: 0.05em;
   color: #fff;
-}
-
-.container-header-p-two {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.625;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
 }
 
 /* main-first */
