@@ -377,3 +377,99 @@ body {
   background-color: #ff6c00;
   color: #fff;
 }
+
+/* section-two */
+
+.container-section-two {
+  text-align: left;
+}
+
+.container-section-two-h3 {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #303030;
+  align-items: center;
+  display: inline-flex;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.container-section-two-h3::before {
+  content: "";
+  display: inline-block;
+  width: 60px; /* Довжина лінії */
+  height: 1px; /* Товщина лінії */
+  margin-right: 20px;
+  background: #303030;
+}
+
+.container-section-two-h4 {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.container-section-two-p2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66667;
+  letter-spacing: 0.02em;
+  color: #555;
+  margin-bottom: 44px;
+}
+
+.container-section-two-ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-section-two-li {
+  width: 193px;
+  height: 133px;
+  background-color: #f7f7f7;
+}
+
+/* піднімаємо перший і третій елемент вгору */
+.container-section-two-li:nth-child(1),
+.container-section-two-li:nth-child(3) {
+  transform: translateY(-10px);
+}
+/* опускаємо другий і четвертий елемент вниз */
+.container-section-two-li:nth-child(2),
+.container-section-two-li:nth-child(4) {
+  transform: translateY(25px);
+}
+
+.container-section-two-span {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #303030;
+  padding-bottom: 6px;
+}
+
+.container-section-two-span::after {
+  content: "+";
+  margin-left: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #ff6c00;
+  position: relative;
+  top: -22px;
+}
+
+.container-section-two-p-li {
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  color: #303030;
+}
