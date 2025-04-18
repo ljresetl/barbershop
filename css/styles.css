@@ -134,8 +134,7 @@ body {
   align-items: flex-start;
   gap: 20px;
   position: absolute;
-  left: 0;
-  padding-left: 31px;
+  left: 31px;
   color: rgba(157, 164, 189, 0.6);
 }
 
@@ -152,8 +151,8 @@ body {
 .container-header-h-one::before {
   content: "";
   display: inline-block;
-  width: 60px; /* Довжина лінії */
-  height: 1px; /* Товщина лінії */
+  width: 60px;
+  height: 1px;
   background: rgba(157, 164, 189, 0.6);
   margin-right: 20px;
 }
