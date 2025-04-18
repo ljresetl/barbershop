@@ -108,10 +108,8 @@ body {
 .main-logo-button-svg {
   background-color: transparent;
   position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 40px;
-  padding-left: 31px;
+  top: 40px;
+  left: 31px;
 }
 
 .svg-logo,
@@ -121,12 +119,11 @@ body {
 
 .burger-button-svg {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding-top: 60px;
-  padding-right: 39px;
+  top: 60px;
+  right: 39px;
   background-color: transparent;
   z-index: 3;
+  padding: 0;
 }
 
 .container-header-div-text {
