@@ -398,6 +398,9 @@ body {
 /* section-two */
 .container-section-two {
   text-align: left;
+  max-width: 418px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
 .container-section-two-text {
@@ -447,8 +450,6 @@ body {
   gap: 30px;
   justify-content: center;
   text-align: center;
-  width: 460px;
-  height: 296px;
 }
 
 .container-section-two-li {
@@ -544,7 +545,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #303030;
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .team-role {
@@ -553,7 +554,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ff6c00;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .social {
