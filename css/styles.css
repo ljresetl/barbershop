@@ -619,3 +619,125 @@ body {
   transition: opacity 0.3s ease;
   opacity: 1; /* завжди червоний */
 }
+/* section-four */
+.container-section-four-p-div {
+  text-align: left;
+  width: 418px;
+  margin-bottom: 71px;
+}
+
+.container-section-four-p {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #303030;
+  align-items: center;
+  display: inline-flex;
+}
+
+.container-section-four-p::before {
+  content: "";
+  display: inline-block;
+  width: 60px; /* Довжина лінії */
+  height: 1px; /* Товщина лінії */
+  margin-right: 20px;
+  background: #303030;
+}
+
+/* section-five */
+
+.container-section-five-label {
+  display: none;
+}
+
+.container-section-five-input,
+.container-section-five-textarea {
+  width: 418px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4); /* або забери повністю */
+  outline: none;
+  box-shadow: none;
+}
+
+.container-section-five-input:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.container-section-five-input:hover {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.container-section-five-textarea:focus {
+  color: #fff;
+}
+
+.container-section-five {
+  background-color: #191c26;
+  gap: 44px;
+}
+
+.container-section-five-title {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+}
+
+.container-section-five-label-text {
+  display: block; /* щоб зайняв весь рядок */
+  text-align: left; /* вирівнювання по лівому краю */
+  margin-bottom: 8px; /* трохи простору перед textarea */
+}
+
+.container-section-five-label-text {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.div-comment:focus-within .container-section-five-label-text {
+  display: none;
+}
+
+.container-section-five-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 44px;
+  width: 418px;
+}
+
+.container-section-five-button {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  width: 160px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+
+/* section-fouter */
