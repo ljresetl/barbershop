@@ -473,3 +473,123 @@ body {
   text-align: center;
   color: #303030;
 }
+
+/* section-three */
+
+.container-section-three {
+  gap: 44px;
+}
+
+.container-section-threetext {
+  align-self: flex-start;
+  text-align: left;
+  margin: 0 21px;
+}
+
+.three-section-h2 {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 20px;
+  align-items: center;
+  display: inline-flex;
+}
+
+.three-section-h2::before {
+  content: "";
+  display: inline-block;
+  width: 60px; /* Довжина лінії */
+  height: 1px; /* Товщина лінії */
+  margin-right: 20px;
+  background: #303030;
+}
+
+.three-section-h3 {
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.team-name {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #303030;
+  margin-bottom: 8px;
+}
+
+.team-role {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ff6c00;
+  margin-bottom: 30px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 22px;
+}
+
+.punkt-spisok:focus {
+  fill: #ff6c00;
+}
+
+.punkt-spisok:hover {
+  fill: #ff6c00;
+}
+.foto-div {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Червоне накладення */
+.foto-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(187, 103, 103, 0.35); /* напівпрозорий червоний */
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 1; /* завжди видно */
+}
+
+/* section-four */
+
+.section-four-image-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-four-image-list li {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-four-image-list li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(187, 103, 103, 0.35); /* червоне з прозорістю */
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  opacity: 1; /* завжди червоний */
+}
