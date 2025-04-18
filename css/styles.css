@@ -396,9 +396,12 @@ body {
 }
 
 /* section-two */
-
 .container-section-two {
   text-align: left;
+}
+
+.container-section-two-text {
+  margin-bottom: 44px;
 }
 
 .container-section-two-h3 {
@@ -409,7 +412,7 @@ body {
   align-items: center;
   display: inline-flex;
   text-align: left;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .container-section-two-h3::before {
@@ -426,7 +429,7 @@ body {
   font-size: 42px;
   letter-spacing: 0.05em;
   color: #303030;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .container-section-two-p2 {
@@ -435,7 +438,6 @@ body {
   line-height: 1.66667;
   letter-spacing: 0.02em;
   color: #555;
-  margin-bottom: 44px;
 }
 
 .container-section-two-ul {
@@ -494,15 +496,20 @@ body {
 }
 
 /* section-three */
-
 .container-section-three {
-  gap: 44px;
+  text-align: left;
 }
 
 .container-section-threetext {
-  align-self: flex-start;
   text-align: left;
-  margin: 0 21px;
+  margin-bottom: 44px;
+  width: 418px;
+}
+
+.container-section-three-all-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
 }
 
 .three-section-h2 {
@@ -510,7 +517,7 @@ body {
   font-size: 11px;
   text-transform: uppercase;
   color: #303030;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   align-items: center;
   display: inline-flex;
 }
@@ -529,7 +536,6 @@ body {
   font-size: 42px;
   letter-spacing: 0.05em;
   color: #303030;
-  margin-bottom: 44px;
 }
 
 .team-name {
