@@ -418,6 +418,11 @@ img {
   padding: 20px 35px;
   text-align: center;
   border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.container-section-two-li.elay {
+  margin-bottom: 50px; /* Зсув лівих елементів вгору */
 }
 
 .container-section-two-li.delay {
@@ -607,6 +612,11 @@ img {
   outline: none;
   box-shadow: none;
   width: 100%;
+}
+
+.input-wrapper {
+  padding-right: 21px;
+  padding-left: 21px;
 }
 
 .container-section-five-input:focus {
