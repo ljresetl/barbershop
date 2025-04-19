@@ -589,12 +589,12 @@ img {
 }
 
 .container-section-five-form {
-  min-height: 398px;
+  min-width: 398px;
 }
 
 .container-section-five-input,
 .container-section-five-textarea {
-  min-width: 398px;
+  /* min-width: 398px; */
   min-height: 24px;
   font-weight: 600;
   font-size: 11px;
