@@ -588,9 +588,13 @@ img {
   display: none;
 }
 
+.container-section-five-form {
+  min-height: 398px;
+}
+
 .container-section-five-input,
 .container-section-five-textarea {
-  min-width: 418px;
+  min-width: 398px;
   min-height: 24px;
   font-weight: 600;
   font-size: 11px;
@@ -643,14 +647,13 @@ img {
   display: block;
   text-align: left;
   margin-bottom: 8px;
-}
-
-.container-section-five-label-text {
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  /* min-width: 396px; */
+  width: 100%;
 }
 
 .div-comment:focus-within .container-section-five-label-text {
