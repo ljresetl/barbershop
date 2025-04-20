@@ -340,45 +340,44 @@ We work quickly, carefully and with style.</p>
         </div>
       </section>
 
-     <section class="section-five">
-        <div class="container container-section-five bg-common">
-         
-            <p class="container-section-five-title">Online-booking</p>
-
-
-            <form class="container-section-five-form">
-
-                <div class="input-wrapper">
-                    <label class="container-section-five-label" for="user-name">Name*</label>
-                    <div class="div-input-icon">
-
-                        <input type="text" name="user-name" id="user-name" class="container-section-five-input" placeholder="Name*">
-                    </div>
-                </div>
-
-
-                <div class="input-wrapper">
-                    <label class="container-section-five-label" for="phone">Phone*</label>
-                    <div class="div-input-icon">
-
-                        <input type="tel" name="phone" id="phone" class="container-section-five-input" placeholder="Phone*">
-                    </div>
-                </div>
-
-                <div class="div-comment">
-
-                    <label class="container-section-five-label" for="user-comment">Message</label>
-                    <textarea id="user-comment" name="user-comment" class="container-section-five-textarea" placeholder="Message*"></textarea>
-
-
-                </div>
-                <button type="submit" class="container-section-five-button">Send</button>
-
-            </form>
-
+    <section class="section-five">
+  <div class="container container-section-five bg-common">
+    <p class="container-section-five-title">Online-booking</p>
+  
+      <form class="container-section-five-form">
+        <label class="container-section-five-label" for="user-name">
+          <input type="text" 
+          name="user-name" 
+          id="user-name" 
+          class="container-section-five-input" 
+          placeholder="Name*" 
+          autocomplete="name" />
+        </label>
+        <label class="container-section-five-label" for="phone">
+          <input type="tel" 
+          name="phone" 
+          id="phone" 
+          class="container-section-five-input" 
+          placeholder="Phone*" 
+          autocomplete="tel"
+          inputmode="numeric" 
+          pattern="[0-9]*"/>
+        </label>
+        <label class="container-section-five-label" for="user-comment">
+          <textarea 
+          id="user-comment" 
+          name="user-comment" 
+          class="container-section-five-textarea" 
+          placeholder="Message*"></textarea>
+        </label>
         
-        </div>
-      </section>
+      </form>
+      
+      <button type="submit" class="container-section-five-button">Send</button>
+   
+  </div>
+</section>
+
 
 <section class="section-contact">
   <div class="container container-section-contact bg-common">

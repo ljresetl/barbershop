@@ -104,6 +104,20 @@ document.addEventListener('DOMContentLoaded', () => {
     showNextItems();
     loadMoreBtn.addEventListener('click', showNextItems);
   }
+
+  // Вставка курсору на початок при фокусі та кліку в textarea
+  const textarea = document.querySelector('.container-section-five-textarea');
+
+  // Додаємо подію для фокусу
+  textarea.addEventListener('focus', function() {
+    this.setSelectionRange(0, 0); // Встановлюємо курсор на початок
+  });
+
+  // Додаємо подію для натискання мишкою
+  textarea.addEventListener('click', function() {
+    this.setSelectionRange(0, 0); // Встановлюємо курсор на початок
+    this.focus(); // Фокусується на textarea, щоб курсор точно поставився на початок
+  });
 });
 
 // Кнопка "вгору" після 10% скролу сторінки
