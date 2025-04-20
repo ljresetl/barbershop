@@ -351,7 +351,8 @@ We work quickly, carefully and with style.</p>
           id="user-name" 
           class="container-section-five-input" 
           placeholder="Name*" 
-          autocomplete="name" />
+          autocomplete="name"
+          maxlength="20" />
         </label>
         <label class="container-section-five-label" for="phone">
           <input type="tel" 
@@ -359,16 +360,22 @@ We work quickly, carefully and with style.</p>
           id="phone" 
           class="container-section-five-input" 
           placeholder="Phone*" 
-          autocomplete="tel"
-          inputmode="numeric" 
-          pattern="[0-9]*"/>
+          autocomplete="tel" 
+         value="+380" 
+         onfocus="if(this.value == '+380') this.value=''" 
+         oninput="this.value = this.value.replace(/[^0-9+]/g, '')" 
+         maxlength="13" 
+         pattern="\+380[0-9]{9}" 
+         inputmode="numeric" 
+         required/>
         </label>
         <label class="container-section-five-label" for="user-comment">
           <textarea 
           id="user-comment" 
           name="user-comment" 
           class="container-section-five-textarea" 
-          placeholder="Message*"></textarea>
+          placeholder="Message*"
+          maxlength="100" ></textarea>
         </label>
         
       </form>
