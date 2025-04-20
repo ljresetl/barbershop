@@ -113,13 +113,6 @@ img {
   background-repeat: no-repeat;
 }
 
-/* .main-logo-button-svg {
-  background-color: transparent;
-  position: absolute;
-  top: 40px;
-  left: 31px;
-} */
-
 .svg-logo {
   position: absolute;
   top: 40px;
@@ -138,6 +131,10 @@ img {
 .svg-logo,
 .svg-burger {
   fill: #ffffff;
+}
+
+.heder-social {
+  background-color: #f7f7f7;
 }
 
 .container-header-div-text {
@@ -177,6 +174,74 @@ img {
   line-height: 1.625;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.heder-social {
+  display: none;
+}
+
+@media screen and (min-width: 690px) {
+  .container-header {
+    display: flex;
+  }
+
+  .container-header-div-text {
+    padding-left: 97px;
+  }
+
+  .container-header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 32px 0;
+  }
+
+  .lia-a {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .lia-a::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background: black;
+    margin-right: 20px;
+  }
+
+  .svg-logo {
+    fill: #303030;
+  }
+
+  .heder-social {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .li-a {
+    width: 100%;
+  }
+
+  .heder-social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .heder-social-li {
+    display: inline-block;
+    height: 100px;
+    width: 180px;
+    transform: rotate(-90deg); /* Повертає слово вертикально */
+  }
+
+  .burger-button-svg {
+    display: none;
+  }
 }
 
 /* main-first */
@@ -782,6 +847,7 @@ img {
   display: flex;
   align-items: center;
   gap: 20px;
+  position: absolute;
 }
 
 .footer-line {
