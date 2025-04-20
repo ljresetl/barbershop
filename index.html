@@ -360,13 +360,10 @@ We work quickly, carefully and with style.</p>
           id="phone" 
           class="container-section-five-input" 
           placeholder="Phone*" 
-          autocomplete="tel" 
-         value="+380" 
-         onfocus="if(this.value == '+380') this.value=''" 
-         oninput="this.value = this.value.replace(/[^0-9+]/g, '')" 
+          autocomplete="tel"
          maxlength="13" 
-         pattern="\+380[0-9]{9}" 
-         inputmode="numeric" 
+         pattern="(\+380)(\d{9})" 
+         inputmode="tel" 
          required/>
         </label>
         <label class="container-section-five-label" for="user-comment">
