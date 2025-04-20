@@ -176,15 +176,22 @@ img {
   color: #9da4bd;
 }
 
+.heder-social,
+.menu,
+.contacts,
 .heder-social {
   display: none;
 }
 
 @media screen and (min-width: 690px) {
+  .section-footer {
+    display: none;
+  }
+
   .container-header {
     background-color: transparent;
     display: flex;
-    background-position: calc(70px) center; /* зсуваю фон правіше */
+    background-position: calc(70px) center;
   }
 
   .container-header-left {
@@ -236,6 +243,38 @@ img {
 
   .burger-button-svg {
     display: none;
+  }
+
+  .menu,
+  .contacts {
+    display: block;
+  }
+
+  .menu-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .contacts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .contacts-list {
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -842,7 +881,6 @@ img {
   display: flex;
   align-items: center;
   gap: 20px;
-  position: absolute;
 }
 
 .footer-line {
