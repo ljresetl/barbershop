@@ -259,6 +259,10 @@ img {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    color: #fff;
   }
 
   .contacts {
@@ -272,9 +276,44 @@ img {
     gap: 20px;
   }
 
+  .online-booking-btn {
+    color: #fff;
+  }
+
   .contacts-list {
     display: flex;
     gap: 20px;
+    position: absolute;
+    flex-direction: column;
+    top: 40px;
+    right: 30px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+  .contacts-link {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .contacts-list-btn {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    min-width: 161px;
+    min-height: 40px;
+    padding: 12px 20px;
   }
 }
 
