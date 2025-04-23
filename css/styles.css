@@ -416,6 +416,10 @@ img {
 }
 
 /* main-first */
+
+.main-first-inner {
+  display: none;
+}
 .container-main-first-text {
   display: flex;
   flex-direction: column;
