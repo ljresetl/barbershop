@@ -104,8 +104,7 @@ img {
 
 /* container-header */
 .barber-lines,
-.nav-buttons,
-.one-section-image-container {
+.nav-buttons {
   display: none;
 }
 
