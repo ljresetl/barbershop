@@ -232,6 +232,7 @@ img {
   .heder-social {
     display: flex;
     gap: 40px;
+    background-color: transparent;
   }
 
   .heder-social-list {
