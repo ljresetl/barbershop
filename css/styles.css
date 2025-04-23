@@ -103,7 +103,8 @@ img {
 }
 
 /* container-header */
-.barber-lines {
+.barber-lines,
+.nav-buttons {
   display: none;
 }
 
@@ -187,6 +188,10 @@ img {
 }
 
 @media screen and (min-width: 690px) {
+  /* .container {
+    padding: 0;
+  } */
+
   .section-footer,
   .burger-button-svg {
     display: none;
@@ -195,6 +200,7 @@ img {
   .container-header {
     background: none;
     display: flex;
+    padding: 0;
   }
 
   .container-header-wrapper {
@@ -254,7 +260,7 @@ img {
     background-image: url("../images/main-foto-barbershop573px.png");
     padding: 0;
     min-width: 573px;
-    height: 680px;
+    min-height: 680px;
     flex-grow: 1;
     margin-left: 30px;
     display: flex;
