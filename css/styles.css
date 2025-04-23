@@ -104,7 +104,8 @@ img {
 
 /* container-header */
 .barber-lines,
-.nav-buttons {
+.nav-buttons,
+.one-section-image-container {
   display: none;
 }
 
@@ -485,6 +486,26 @@ img {
   height: 40px;
   background-color: #ff6c00;
   color: #fff;
+}
+
+@media screen and (min-width: 690px) {
+  .main-first-inner {
+    display: flex;
+    gap: 30px;
+    min-width: 690px;
+  }
+
+  .one-section-image-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    min-width: 330px;
+  }
+
+  .container-main-first-text {
+    min-width: 330px;
+    margin-bottom: 77px;
+  }
 }
 
 /* container-section-one */

@@ -114,23 +114,60 @@
     <!-- <script src="script.js" defer></script> -->
     </header>
     <main>
-      <section class="main-first">
-        <div class="container container-main-first bg-common">
-          <div class="container-main-first-text">
-            <p class="main-p-one">About</p>
-            <h2 class="main-h">Best Barbershop in </br> your city</h2>
-            <p class="main-p-two">If you want to add more confidence to your image, you should visit us</p>
-            <p class="main-p-three">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
-           
-          </div>       
-          <div class="container-main-first-button">
-  <button type="button" class="online-booking-btn" aria-label="online-booking">
-              online-booking
-            </button>
-</div>
-        </div>
+     <section class="main-first">
+  <div class="container container-main-first bg-common">
+    <div class="main-first-inner">
+      <!-- Ліва частина — фото -->
+      <div class="one-section-image-container">
+        <picture>
+          <source
+            srcset="./images/main-first768-one-foto.png 1x, 
+            ./images/main-first768-one-foto2x.png 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="./images/main-first768-one-foto.png"
+            alt="Amico Image"
+            width="330"
+            height="235"
+            loading="lazy"
+          />
+        </picture>
 
-      </section>
+        <picture>
+          <source
+            srcset="./images/main-first768-two-foto.png 1x, 
+            ./images/main-first768-two-foto2x.png 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="./images/main-first768-two-foto.png"
+            alt="Amico Image"
+            width="330"
+            height="235"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+
+      <!-- Права частина — текст -->
+      <div class="main-first-text-button">
+        <div class="container-main-first-text">
+          <p class="main-p-one">About</p>
+          <h2 class="main-h">Best Barbershop in <br> your city</h2>
+          <p class="main-p-two">If you want to add more confidence to your image, you should visit us</p>
+          <p class="main-p-three">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+        </div>
+        <div class="container-main-first-button">
+          <button type="button" class="online-booking-btn" aria-label="online-booking">
+            online-booking
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section class="section-one">
         <div class="container container-section-one bg-common">
