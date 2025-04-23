@@ -240,6 +240,7 @@ img {
     align-items: center;
     gap: 40px;
     padding-bottom: 40px;
+    background-color: #fff;
   }
 
   .heder-social-li {
