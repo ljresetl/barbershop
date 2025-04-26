@@ -92,7 +92,9 @@ img {
   }
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    min-width: 690px;
+    padding: 0 10px;
+    /* width: 100%; */
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -115,6 +117,16 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.header-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* щоб гарно заповнювало */
+  z-index: -1; /* щоб картинка була позаду всього контенту */
 }
 
 .svg-logo {
@@ -197,13 +209,14 @@ img {
     background: none;
     display: flex;
     justify-content: center;
-    /* min-width: 690px; */
     max-width: 690px;
+    padding: 0 39px;
+    gap: 30px;
   }
 
   .container-header-left {
     background-color: #f7f7f7;
-    min-height: 680px;
+    min-width: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,7 +267,7 @@ img {
     min-width: 573px;
     min-height: 680px;
     flex-grow: 1;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -391,7 +404,9 @@ img {
     height: 1px;
     background: rgba(157, 164, 189, 0.6);
     bottom: 5px;
-    left: 0px;
+    /* left: 0px; */
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* ЛІНІЯ ДЛЯ SIGUIENTE */
@@ -493,18 +508,18 @@ img {
 }
 
 @media screen and (min-width: 690px) {
-  .main-first {
+  .section-main-first {
+    margin: 0 auto;
     padding-top: 77px;
     padding-bottom: 123px;
   }
 
   .container-main-first {
     display: flex;
+    padding-left: 66px;
+    padding-right: 12px;
     gap: 30px;
     max-width: 690px;
-    /* min-width: 690px; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
   }
 
   .one-section-image-container {
@@ -514,10 +529,6 @@ img {
     min-width: 330px;
   }
 
-  .main-first-text-button {
-    margin-bottom: 77px;
-  }
-
   .main-p-two {
     font-size: 16px;
   }
@@ -525,7 +536,7 @@ img {
 
 /* container-section-one */
 .section-one {
-  padding-top: 0;
+  padding-top: 100px;
 }
 
 .container-section-one {
@@ -536,8 +547,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 84px;
-  padding-top: 84px;
+  width: 100%;
+  max-width: 748px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .container-section-one-p {
@@ -547,6 +560,8 @@ img {
   color: rgba(157, 164, 189, 0.6);
   display: inline-flex;
   align-items: center;
+  /* margin-top: 100px; */
+  /* padding-top: 100px; */
 }
 
 .container-section-one-p::before {
@@ -631,20 +646,23 @@ img {
 
 @media screen and (min-width: 690px) {
   .section-one {
+    padding-top: 0px;
     padding-bottom: 100px;
+    margin: 0 auto;
   }
 
   .container-section-one {
-    position: relative;
+    min-height: 856px;
     background-image: url("../images/section-one4-768px.png");
-    max-width: 748px;
+    justify-content: center;
+    position: relative;
   }
 
   .container-section-one::before {
     content: "";
     position: absolute;
-    inset: 0; /* топ, ліво, право, низ = 0 */
-    background: rgba(5, 7, 12, 0.6); /* затемнення фону */
+    inset: 0;
+    background: rgba(5, 7, 12, 0.6);
     z-index: 1;
   }
 
@@ -781,14 +799,13 @@ img {
 }
 
 @media screen and (min-width: 690px) {
-  .section-two {
-    margin: 0 auto;
-    /* max-width: 690px; */
-    padding-top: 0px;
+  .container-section-two {
+    max-width: 692px;
+    padding: 0px 10px;
   }
 
-  .container-section-two {
-    max-width: 690px;
+  .section-two {
+    padding-top: 0px;
   }
 
   .container-section-two-ul {
@@ -798,7 +815,6 @@ img {
   }
 
   .container-section-two-li {
-    /* padding: 20px 44px; */
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -900,6 +916,9 @@ img {
 .foto-div {
   padding-bottom: 20px;
 }
+
+/* @media screen and (min-width: 690px) {
+} */
 
 /* section-four */
 

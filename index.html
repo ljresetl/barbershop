@@ -13,6 +13,13 @@
       
       <div class="container container-header bg-common">
 
+        <!-- <img 
+      src="./images/main-foto-barbershop480px.png" 
+      alt="background photo" 
+      class="header-bg-image"
+    /> -->
+
+
       
   <div class="container-header-left">
 
@@ -108,7 +115,7 @@
     <!-- <script src="script.js" defer></script> -->
     </header>
     <main>
-     <section class="main-first">
+     <section class="section-main-first">
   <div class="container container-main-first bg-common">
     <!-- <div class="main-first-inner"> -->
       <!-- Ліва частина — фото -->
@@ -268,12 +275,21 @@
     
                         <li class="three-section-item">
         <div class="foto-div">
-                              
-          <img srcset="./images/Our-barbers480.png 1x, 
-                      ./images/Our-barbers480(2x).png 2x" 
-                  src="./images/Our-barbers480.png" width="418" height="346"
-          alt="John Smith" class="team-photo"/>
-        </div>
+  <picture>
+    <!-- Для екранів ширше 690px -->
+    <source 
+      srcset="./images/Our-barbers768.png 1x, ./images/Our-barbers768(2x).png 2x" 
+      media="(min-width: 690px)">
+    
+    <!-- Для мобільних -->
+    <img 
+      srcset="./images/Our-barbers480.png 1x, ./images/Our-barbers480(2x).png 2x" 
+      src="./images/Our-barbers480.png" 
+      width="418" height="346"
+      alt="John Smith" 
+      class="team-photo"/>
+  </picture>
+</div>
     
     
                             <div class="div-name-role">
@@ -313,13 +329,22 @@
     
     
                         <li class="three-section-item">
-       <div class="foto-div">
-                              
-          <img srcset="./images/Our-barbers2-480.png 1x, 
+
+ <div class="foto-div">
+  <picture>
+    <!-- Для екранів ширше 690px -->
+    <source 
+      srcset="./images/Our-barbers2-768.png 1x, ./images/Our-barbers2-768(2x).png 2x" 
+      media="(min-width: 690px)">
+    
+    <!-- Для мобільних -->
+<img srcset="./images/Our-barbers2-480.png 1x, 
                       ./images/Our-barbers2-480(2x).png 2x" 
                   src="./images/Our-barbers480.png" width="418" height="346"
           alt="John Smith" class="team-photo"/>
-       </div>
+  </picture>
+</div>
+
     
     
                             <div class="div-name-role">
@@ -359,12 +384,25 @@
     
     
                         <li class="three-section-item">
-        <div class="foto-div">
-                              
-          <img srcset="./images/Our-barbers3-480.png 1x, 
+
+ <div class="foto-div">
+  <picture>
+    <!-- Для екранів ширше 690px -->
+    <source 
+      srcset="./images/Our-barbers3-768.png 1x, ./images/Our-barbers3-768(2x).png 2x" 
+      media="(min-width: 690px)">
+    
+    <!-- Для мобільних -->
+<img srcset="./images/Our-barbers3-480.png 1x, 
                       ./images/Our-barbers3-480(2x).png 2x" 
                   src="./images/Our-barbers480.png" width="418" height="346"
           alt="John Smith" class="team-photo"/>
+  </picture>
+</div>
+
+        <div class="foto-div">
+                              
+          
         </div>
     
     
