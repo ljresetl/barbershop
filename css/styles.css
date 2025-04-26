@@ -735,6 +735,7 @@ img {
 .container-section-two-li {
   background-color: #f8f8f8;
   padding: 20px 35px;
+  justify-content: center;
   text-align: center;
   border-radius: 8px;
   background: #f7f7f7;
@@ -781,23 +782,31 @@ img {
 
 @media screen and (min-width: 690px) {
   .section-two {
+    margin: 0 auto;
+    /* max-width: 690px; */
     padding-top: 0px;
+  }
+
+  .container-section-two {
+    max-width: 690px;
   }
 
   .container-section-two-ul {
     align-items: center;
     max-width: 550px;
-    justify-content: end;
     margin-left: auto;
   }
 
   .container-section-two-li {
-    padding: 20px 44px;
+    /* padding: 20px 44px; */
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 210px;
+    max-height: 133px;
   }
 
   .container-section-two-span {
