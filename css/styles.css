@@ -663,9 +663,8 @@ img {
 
   .container-section-one-ul {
     max-width: 703px;
-    max-height: 444px;
-    width: 100%;
     margin: 0 auto;
+    margin-bottom: 44px;
   }
 
   .container-section-one-li {
@@ -675,6 +674,10 @@ img {
   .service-name,
   .service-price {
     font-size: 16px;
+  }
+
+  .container-section-one-btn {
+    z-index: 2;
   }
 }
 
