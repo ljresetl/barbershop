@@ -1014,10 +1014,11 @@ img {
 }
 
 /* section-five */
-/* .section-five {
-  padding-top: 0;
-  padding-bottom: 0;
-} */
+
+.section-five {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
 
 .container-section-five {
   display: flex;
@@ -1025,9 +1026,6 @@ img {
   align-items: center;
   background-color: #191c26;
   justify-content: center;
-  /* padding-top: 84px;
-  padding-bottom: 84px; */
-
   min-height: 521px;
   padding-top: 0;
   padding-bottom: 0;
@@ -1053,7 +1051,8 @@ img {
   min-width: 418px;
 }
 
-.container-section-five-label {
+.container-section-five-label,
+.container-section-five-label-textarea {
   width: 100%;
 }
 
@@ -1105,6 +1104,45 @@ img {
 }
 
 @media screen and (min-width: 690px) {
+  .section-five {
+    padding-top: 100px;
+  }
+
+  .container-section-five {
+    align-items: flex-start;
+    max-width: 690px;
+    /* padding-bottom: 100px;
+    padding-top: 100px; */
+    padding-left: 39px;
+    padding-right: 39px;
+    /* justify-content: center; */
+  }
+
+  .container-section-five-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Для перших двох полів (Name та Phone) */
+  .container-section-five-label {
+    width: 48%;
+  }
+
+  /* Спеціально тільки для textarea */
+  .container-section-five-label-textarea {
+    margin-top: 20px;
+    min-width: 690px;
+    /* width: 100%; */
+  }
+
+  .container-section-five-textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
 }
 
 /* section-contact */
