@@ -98,7 +98,8 @@ img {
 }
 @media only screen and (min-width: 1170px) {
   .container {
-    max-width: 1600px;
+    min-width: 1150px;
+    max-width: 1580px;
     padding: 0 100px;
   }
 }
@@ -258,6 +259,7 @@ img {
     height: 60px;
     background-color: #303030;
   }
+
   /* права сторона де фотка */
   .container-header-div-text {
     background-image: url("../images/main-foto-barbershop573px.png");
@@ -416,6 +418,62 @@ img {
     background: rgba(157, 164, 189, 0.6);
     bottom: 5px;
     right: 0px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .container-header {
+    max-width: 1235px;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .container-header-left {
+    background-color: #f7f7f7;
+    min-width: 155px;
+  }
+  .heder-social-li {
+    padding: 0px;
+  }
+
+  .svg-logo {
+    left: 55px;
+    top: 22px;
+  }
+
+  .container-header-div-text {
+    background-image: url("../images/main-foto-barbershop1170px.png");
+    min-width: 1070px;
+    min-height: 680px;
+  }
+
+  .menu {
+    top: 38px;
+    left: 200px;
+    gap: 30px;
+  }
+
+  .contacts {
+    top: 32px;
+    right: 17px;
+  }
+
+  .contacts-list {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .text-content {
+    top: 50%;
+    left: 100px;
+    gap: 20px;
+  }
+
+  .nav-buttons {
+    gap: 20px;
+    bottom: 40px;
+    right: 20px;
   }
 }
 
