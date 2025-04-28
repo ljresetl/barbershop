@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1170px) {
+  .container {
+    min-width: 1150px;
+    max-width: 1580px;
+    padding: 0 100px;
+  }
+}
