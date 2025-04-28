@@ -181,62 +181,6 @@ img {
   display: none;
 }
 
-@media only screen and (min-width: 1170px) {
-  .container-header {
-    max-width: 1235px;
-    padding: 0px;
-    gap: 0px;
-  }
-
-  .container-header-left {
-    background-color: #f7f7f7;
-    min-width: 155px;
-  }
-  .heder-social-li {
-    padding: 0px;
-  }
-
-  .svg-logo {
-    left: 55px;
-    top: 22px;
-  }
-
-  .container-header-div-text {
-    background-image: url("../images/main-foto-barbershop1170px.png");
-    min-width: 1070px;
-    min-height: 680px;
-  }
-
-  .menu {
-    top: 38px;
-    left: 200px;
-    gap: 30px;
-  }
-
-  .contacts {
-    top: 32px;
-    right: 17px;
-  }
-
-  .contacts-list {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .text-content {
-    top: 50%;
-    left: 100px;
-    gap: 20px;
-  }
-
-  .nav-buttons {
-    gap: 20px;
-    bottom: 40px;
-    right: 20px;
-  }
-}
-
 /* main-first */
 
 .one-section-image-container {
@@ -399,6 +343,13 @@ img {
   padding-right: 20px;
 }
 
+.container-section-one-ul-one,
+.container-section-one-ul-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .service-name,
 .service-price {
   white-space: nowrap;
@@ -414,6 +365,13 @@ img {
   height: 1px;
   background: rgba(157, 164, 189, 0.6);
   margin: 0 4px;
+}
+
+.container-section-one-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Ставить кнопку по центру */
+  margin-top: 40px; /* Відступ зверху за бажанням */
 }
 
 .container-section-one-btn {

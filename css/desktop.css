@@ -1,7 +1,141 @@
-@media only screen and (min-width: 1170px) {
-  .container {
-    min-width: 1150px;
-    max-width: 1580px;
-    padding: 0 100px;
-  }
+.container {
+  min-width: 1150px;
+  max-width: 1580px;
+  padding: 0 10px;
+}
+
+/* section-header */
+.container-header {
+  max-width: 1170px;
+  padding: 0px;
+  gap: 0px;
+}
+
+.container-header-left {
+  background-color: #f7f7f7;
+  min-width: 100px;
+}
+.heder-social-li {
+  padding: 0px;
+}
+
+.svg-logo {
+  /* left: 55px; */
+  top: 22px;
+}
+
+.container-header-div-text {
+  background-image: url("../images/main-foto-barbershop1170px.png");
+  min-width: 1070px;
+  min-height: 680px;
+}
+
+.menu {
+  top: 38px;
+  left: 200px;
+  gap: 30px;
+}
+
+.contacts {
+  top: 32px;
+  right: 17px;
+}
+
+.contacts-list {
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content {
+  top: 50%;
+  left: 100px;
+  gap: 20px;
+}
+
+.nav-buttons {
+  gap: 20px;
+  bottom: 40px;
+  right: 20px;
+}
+
+/* main-first */
+.section-main-first {
+  padding: 120px 0px;
+}
+
+.container-main-first {
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1150px;
+}
+
+.one-section-image-container {
+  min-height: 445px;
+  flex-direction: row;
+}
+
+.container-main-first-text {
+  min-width: 470px;
+}
+
+/* container-section-one */
+.section-one {
+  padding-bottom: 120px;
+}
+
+.container-section-one {
+  max-width: 1580px;
+  min-height: 691px;
+  max-height: 692px;
+  background: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
+    url("../images/section-one4-1170px.png") center/cover no-repeat;
+  justify-content: flex-start;
+}
+
+.container-section-one-text {
+  align-self: flex-start;
+  width: 900px;
+}
+
+.container-section-one-ul {
+  max-width: 1170px;
+  gap: 30px;
+  flex-direction: row;
+  min-height: 240px;
+  margin-bottom: 0px;
+  background-color: transparent;
+}
+
+.container-section-one-ul-one,
+.container-section-one-ul-two {
+  display: flex;
+  justify-content: center;
+  min-width: 570px;
+  min-height: 240px;
+}
+
+.container-section-one-ul-one {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.container-section-one-ul-two {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.container-section-one-li {
+  width: 80%;
+}
+
+.container-section-one-btn {
+  margin-bottom: 0px;
+}
+
+.container-section-one-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

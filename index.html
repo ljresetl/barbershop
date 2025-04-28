@@ -122,35 +122,55 @@
     <!-- <div class="main-first-inner"> -->
       <!-- Ліва частина — фото -->
       <div class="one-section-image-container">
-        <picture>
-          <source
-            srcset="./images/main-first768-one-foto.png 1x, 
-            ./images/main-first768-one-foto2x.png 2x"
-            media="(max-width: 768px)"
-          />
-          <img
-            src="./images/main-first768-one-foto.png"
-            alt="Amico Image"
-            width="330"
-            height="235"
-            loading="lazy"
-          />
-        </picture>
+<picture class="tablet-desktop-only">
+  <!-- Десктопна версія -->
+  <source
+    srcset="./images/main-first1170-one-foto.png 1x, 
+            ./images/main-first1170-one-foto2x.png 2x"
+    media="(min-width: 1170px)"
+      width="270"
+    height="445"/>
+  <!-- Планшетна версія -->
+  <source
+    srcset="./images/main-first690-one-foto.png 1x, 
+            ./images/main-first690-one-foto2x.png 2x"
+    media="(min-width: 690px)"
+      width="330"
+    height="235"/>
+  <!-- Фолбек картинка (наприклад планшетна) -->
+  <img
+    src="./images/main-first690-one-foto.png"
+    alt="Amico Image One"
+    width="330"
+    height="235"
+    loading="lazy"
+  />
+</picture>
 
-        <picture>
-          <source
-            srcset="./images/main-first768-two-foto.png 1x, 
-            ./images/main-first768-two-foto2x.png 2x"
-            media="(max-width: 768px)"
-          />
-          <img
-            src="./images/main-first768-two-foto.png"
-            alt="Amico Image"
-            width="330"
-            height="235"
-            loading="lazy"
-          />
-        </picture>
+<picture class="tablet-desktop-only">
+  <!-- Десктопна версія -->
+  <source
+    srcset="./images/main-first1170-two-foto.png 1x, 
+            ./images/main-first1170-two-foto2x.png 2x"
+    media="(min-width: 1170px)"
+      width="270"
+    height="445"/>
+  <!-- Планшетна версія -->
+  <source
+    srcset="./images/main-first690-two-foto.png 1x, 
+            ./images/main-first690-two-foto2x.png 2x"
+    media="(min-width: 690px)"
+      width="330"
+    height="235"/>
+  <!-- Фолбек картинка (наприклад планшетна) -->
+  <img
+    src="./images/main-first690-two-foto.png"
+    alt="Amico Image Two"
+    width="330"
+    height="235"
+    loading="lazy"
+  />
+</picture>
       </div>
 
       <!-- Права частина — текст -->
@@ -175,62 +195,71 @@
       <section class="section-one">
         <div class="container container-section-one bg-common">
 
-  
-   <div class="container-section-one-text">
-      <p class="container-section-one-p">Spend your time with the best masters</p>
-      <h3 class="container-section-one-h">Services and prices</h3>
-   </div>
-    <ul class="container-section-one-ul">
-    <li class="container-section-one-li">
-      <span class="service-name">Men’s haircut</span>
-      <span class="line"></span>
-      <span class="service-price">from 300 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Beard trim</span>
-      <span class="line"></span>
-      <span class="service-price">from 200 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Mustache trim</span>
-      <span class="line"></span>
-      <span class="service-price">from 200 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Straight razor shave</span>
-      <span class="line"></span>
-      <span class="service-price">from 200 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Trainee’s haircut</span>
-      <span class="line"></span>
-      <span class="service-price">from 50 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Haircut under the nozzle</span>
-      <span class="line"></span>
-      <span class="service-price">from 200 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Children’s haircut (0-12 y.o.)</span>
-      <span class="line"></span>
-      <span class="service-price">from 300 uah.</span>
-    </li>
-    <li class="container-section-one-li">
-      <span class="service-name">Camouflage of grey hair</span>
-      <span class="line"></span>
-      <span class="service-price">from 200 uah.</span>
-    </li>
-  
-  </ul>
-
+  <div class="container-section-one-wrapper">
     
-      <button type="button" class="container-section-one-btn" 
-      aria-label="online-booking">online-booking</button>
+     <div class="container-section-one-text">
+        <p class="container-section-one-p">Spend your time with the best masters</p>
+        <h3 class="container-section-one-h">Services and prices</h3>
+     </div>
+        <ul class="container-section-one-ul">
+        <div class="container-section-one-ul-one">
+          <li class="container-section-one-li">
+            <span class="service-name">Men’s haircut</span>
+            <span class="line"></span>
+            <span class="service-price">from 300 uah.</span>
+          </li>
+          <li class="container-section-one-li">
+            <span class="service-name">Beard trim</span>
+            <span class="line"></span>
+            <span class="service-price">from 200 uah.</span>
+          </li>
+          <li class="container-section-one-li">
+            <span class="service-name">Mustache trim</span>
+            <span class="line"></span>
+            <span class="service-price">from 200 uah.</span>
+          </li>
+          <li class="container-section-one-li">
+            <span class="service-name">Straight razor shave</span>
+            <span class="line"></span>
+            <span class="service-price">from 200 uah.</span>
+          </li>
+        </div>
+        <div class="container-section-one-ul-two">
+          <li class="container-section-one-li">
+            <span class="service-name">Trainee’s haircut</span>
+            <span class="line"></span>
+            <span class="service-price">from 50 uah.</span>
+          </li>
+          <li class="container-section-one-li">
+            <span class="service-name">Haircut under the nozzle</span>
+            <span class="line"></span>
+            <span class="service-price">from 200 uah.</span>
+          </li>
+          <li class="container-section-one-li">
+            <span class="service-name">Children’s haircut (0-12 y.o.)</span>
+            <span class="line"></span>
+            <span class="service-price">from 300 uah.</span>
+          </li>
+          <li class="container-section-one-li">
+            <span class="service-name">Camouflage of grey hair</span>
+            <span class="line"></span>
+            <span class="service-price">from 200 uah.</span>
+          </li>
+        
+        </div>
+      </ul>
     
-
-
-
+  
+      <div class="container-section-one-btn-wrapper">
+        
+          <button type="button" class="container-section-one-btn" 
+          aria-label="online-booking">online-booking</button>
+        
+    
+      </div>
+  
+  
+  </div>
         </div>
       </section>
 
