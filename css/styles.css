@@ -457,10 +457,10 @@ img {
   gap: 20px;
   z-index: 3;
   justify-content: center;
-  min-width: 398px;
-  max-width: 418px;
+  /* min-width: 398px; */
+  /* max-width: 418px; */
   min-height: 360px;
-  width: 100%;
+  min-width: 80%;
 }
 
 .container-section-one-li {
