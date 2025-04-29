@@ -92,6 +92,128 @@ img {
   width: 1px;
 }
 
+/* Бургер-меню */
+.burger-menu-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  box-shadow: -1px 0 3px 0 rgba(0, 0, 0, 0.16), -2px 0 4px 0 rgba(0, 0, 0, 0.08),
+    -4px 0 8px 0 rgba(0, 0, 0, 0.04);
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 64px;
+  z-index: 1000;
+  padding: 40px 40px 40px 40px;
+}
+
+.burger-menu-wrapper.open {
+  display: flex;
+}
+
+/* Навігація, контакти, соцмережі */
+.burger-nav-list,
+.burger-contacts-list,
+.burger-social-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 24px;
+}
+
+.burger-nav-link,
+.burger-phone,
+.burger-social-list a {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  color: #303030;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Кнопка онлайн-запису */
+.burger-booking-btn {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  width: 194px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #303030;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.9s ease, border-color 0.9s ease;
+}
+
+/* Ховер ефекти */
+.burger-nav-link:hover,
+.burger-nav-link:focus,
+.burger-phone:hover,
+.burger-phone:focus,
+.burger-social-list a:hover,
+.burger-social-list a:focus {
+  color: #ff6c00;
+}
+
+.burger-booking-btn:hover,
+.burger-booking-btn:focus {
+  background: #ff6c00;
+  color: #fff;
+}
+
+/* Кнопка закриття */
+.burger-close-btn {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  width: 40px;
+  height: 40px;
+  z-index: 1100;
+}
+
+.burger-close-icon {
+  width: 24px;
+  height: 24px;
+  fill: #303030;
+  transition: fill 0.8s ease;
+}
+
+.burger-close-btn:hover .burger-close-icon,
+.burger-close-btn:focus .burger-close-icon {
+  fill: #ff6c00;
+}
+
+.burger-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.burger-social-li-i {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.burger-social-li-i::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background: #303030;
+}
+
 /* container-header */
 .barber-lines,
 .nav-buttons {

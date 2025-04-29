@@ -7,6 +7,10 @@
   padding: 0 10px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .burger-button-svg {
   display: none;
 }
