@@ -89,8 +89,8 @@
   max-width: 1600px;
   min-height: 691px;
   max-height: 692px;
-  background: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
-    url("../images/section-one4-1170px.png") center/cover no-repeat;
+  background: url("../images/section-one4-1170px.png") center/cover no-repeat,
+    linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8));
 }
 
 .container-section-one-text {

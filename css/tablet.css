@@ -265,7 +265,8 @@
   position: relative;
   max-width: 748px;
   min-height: 856px;
-  background-image: url("../images/section-one4-768px.png");
+  background: url("../images/section-one4-768px.png") center/cover no-repeat,
+    linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8));
 }
 
 .container-section-one::before {
