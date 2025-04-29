@@ -781,7 +781,8 @@ img {
   justify-content: center;
   gap: 44px;
   margin-bottom: 44px;
-  min-width: 418px;
+  /* min-width: 418px; */
+  min-width: 80%;
 }
 
 .container-section-five-label,
