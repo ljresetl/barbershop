@@ -794,6 +794,8 @@ img {
 }
 
 .container-section-contact-li-icon {
+  width: 24px;
+  height: 24px;
   stroke: #9da4bd;
   background-color: transparent;
 }

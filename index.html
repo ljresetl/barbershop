@@ -568,7 +568,7 @@
         </div>
       </section>
 
-    <section class="section-five">
+    <!-- <section class="section-five">
   <div class="container container-section-five bg-common">
     <p class="container-section-five-title">Online-booking</p>
   
@@ -606,13 +606,13 @@
     
     <button type="submit" class="container-section-five-button">Send</button>
   </div>
-</section>
+</section> -->
 
 
 
 
 
-<section class="section-contact">
+<!-- <section class="section-contact">
   <div class="container container-section-contact bg-common">
     <h3 class="container-section-contact-h3">Contacts</h3>
 
@@ -660,7 +660,6 @@
   <div class="container container-section-footer bg-common">
 
     <div class="footer-wrapper">
-      <!-- Ліва сторона -->
       <div class="svg-p">
         <svg class="container-section-footer-li-icon" width="12" height="12">
           <use href="./images/icons.svg#icon-Group"></use>
@@ -669,7 +668,6 @@
         
       </div>
 
-      <!-- Права сторона -->
       <div class="footer-social">
         <span class="footer-line"></span>
         <ul class="footer-social-list">
@@ -688,7 +686,114 @@
     </div>
     
   </div>
-</footer>
+</footer> -->
+
+<section class="section-contact-all">
+  <div class="container container-contact-all bg-common">
+
+   <div class="container-section-five">
+     
+      <p class="container-section-five-title">Online-booking</p>
+      <form class="container-section-five-form">
+        <label class="container-section-five-label" for="user-name">
+          <input type="text" 
+                 name="user-name" 
+                 id="user-name" 
+                 class="container-section-five-input" 
+                 placeholder="Name*" 
+                 autocomplete="name"
+                 maxlength="20" />
+        </label>
+        <label class="container-section-five-label" for="phone">
+          <input type="tel" 
+                 name="phone" 
+                 id="phone" 
+                 class="container-section-five-input" 
+                 placeholder="Phone*" 
+                 autocomplete="tel"
+                 maxlength="13" 
+                 pattern="(\+380)(\d{9})" 
+                 inputmode="tel" 
+                 required />
+        </label>
+        <label class="container-section-five-label-textarea" for="user-comment">
+          <textarea 
+                 id="user-comment" 
+                 name="user-comment" 
+                 class="container-section-five-textarea" 
+                 placeholder="Message*"
+                 maxlength="100"></textarea>
+        </label>
+      </form>
+     <div class="container-section-five-button-div">
+        
+        <button type="submit" class="container-section-five-button">Send</button>
+    
+     </div>
+   </div>
+<div class="container-section-contact">
+  
+      <h3 class="container-section-contact-h3">Contacts</h3>
+      <div class="contact-content-wrapper">
+        <ul class="container-section-contact-ul">
+          <li class="container-section-contact-li">
+            <a class="container-section-contact-li-link" href="https://maps.google.com/?q=Vasilkovaya, 7A Kiev, 08132" target="_blank">
+              <svg class="container-section-contact-li-icon" width="18" height="20">
+                <use href="./images/icons.svg#icon-map-pin"></use>
+              </svg>
+              st. Vasilkovaya, 7A Kiev, 08132
+            </a>
+          </li>
+          <li class="container-section-contact-li">
+            <a class="container-section-contact-li-link" href="tel:+380441111111">
+              <svg class="container-section-contact-li-icon" width="18" height="20">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 044 111 11 11
+            </a>
+          </li>
+          <li class="container-section-contact-li">
+            <a class="container-section-contact-li-link" href="mailto:barbershop@email.com">
+              <svg class="container-section-contact-li-icon" width="18" height="20">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              barbershop@email.com
+            </a>
+          </li>
+        </ul>
+  
+        <div class="container-section-contact-pp">
+          <p class="container-section-contact-p1">Working hours</p>
+          <p class="container-section-contact-p2">Every day from 9:00 to 22:00</p>
+        </div>
+      </div>
+  
+</div>
+   
+    <div class="footer-wrapper">
+      <div class="svg-p">
+        <svg class="container-section-footer-li-icon" width="12" height="12">
+          <use href="./images/icons.svg#icon-Group"></use>
+        </svg>
+        <p class="footer-p">Copyright 2020</p>
+      </div>
+
+      <div class="footer-social">
+        <span class="footer-line"></span>
+        <ul class="footer-social-list">
+          <li class="footer-social-li">
+            <a href="https://instagram/" target="_blank">Instagram</a>
+          </li>
+          <li class="footer-social-li">
+            <a href="https://youtube/" target="_blank">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   </main>
   </body>

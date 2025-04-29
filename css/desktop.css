@@ -199,4 +199,92 @@
 
 .container-section-four-p {
   min-width: 1170px;
+  margin-bottom: 0px;
+}
+
+/* section-five section-contact section-footer через абсолют
+ */
+.container-contact-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 1171px;
+  max-width: 1580px;
+  justify-content: center;
+}
+
+.container-section-five {
+  display: flex;
+
+  width: 48%;
+  max-height: 625px;
+  padding: 0px;
+  align-items: flex-end;
+  padding-right: 25px;
+}
+
+.container-section-five-title {
+  width: 570px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.container-section-five-button {
+  align-items: flex-start;
+}
+
+.container-section-contact {
+  max-width: 785px;
+  width: 50%;
+  height: 625px;
+  padding: 0px;
+}
+
+.container-section-five-button-div {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start; /* вирівнює кнопку вліво */
+}
+
+.footer-wrapper {
+  width: 100%;
+  gap: 773px;
+}
+
+.container-section-five-form {
+  width: 570px;
+  resize: both;
+}
+
+.container-section-five-label-textarea {
+  min-width: 570px;
+}
+
+.container-section-five-textarea {
+  resize: both;
+  min-width: 80%;
+}
+
+.contact-content-wrapper {
+  flex-direction: column;
+  gap: 70px;
+  padding-left: 120px;
+  max-width: 270px;
+}
+
+.container-section-contact-li-link {
+  gap: 16px;
+}
+
+.container-section-contact-h3 {
+  max-width: 270px;
+  padding-left: 120px;
+}
+
+.svg-p {
+  padding-left: 215px;
+}
+
+.footer-social {
+  padding-right: 215px;
 }
