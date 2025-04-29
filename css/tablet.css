@@ -348,7 +348,7 @@
 }
 
 .container-section-four {
-  max-width: 690px;
+  min-width: 690px;
   padding: 0px 39px;
 }
 
@@ -398,7 +398,7 @@
 
 .container-section-five {
   align-items: flex-start;
-  width: 690px;
+  min-width: 690px;
   padding-left: 39px;
   padding-right: 39px;
 }
@@ -429,7 +429,7 @@
 
 /* section-contact */
 .container-section-contact {
-  max-width: 690px;
+  min-width: 690px;
   min-height: 449px;
   justify-content: flex-start;
   padding-left: 39px;
