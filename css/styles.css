@@ -801,6 +801,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+  resize: none !important;
 }
 
 .container-section-five-input::placeholder,

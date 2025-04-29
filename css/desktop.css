@@ -268,7 +268,7 @@
   flex-direction: column;
   gap: 70px;
   padding-left: 120px;
-  max-width: 270px;
+  /* max-width: 270px; */
 }
 
 .container-section-contact-li-link {
