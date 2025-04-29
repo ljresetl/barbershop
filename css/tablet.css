@@ -74,7 +74,6 @@
   min-width: 573px;
   min-height: 680px;
   flex-grow: 1;
-  /* margin-left: 30px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,7 +210,6 @@
   height: 1px;
   background: rgba(157, 164, 189, 0.6);
   bottom: 5px;
-  /* left: 0px; */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -422,13 +420,11 @@
 .container-section-five-label-textarea {
   margin-top: 20px;
   min-width: 690px;
-  /* width: 100%; */
 }
 
 .container-section-five-textarea {
   width: 100%;
   height: 150px;
-  /* resize: none; */
 }
 
 /* section-contact */
@@ -453,11 +449,6 @@
   max-width: 748px;
 }
 
-.address-break::before {
-  content: "\A"; /* вставляє перенос рядка */
-  white-space: pre;
-}
-
 /* section-fouter */
 .container-section-footer {
   max-width: 748px;
@@ -470,4 +461,5 @@
 .footer-wrapper {
   min-height: 127px;
   padding: 0px;
+  max-width: 1170px;
 }

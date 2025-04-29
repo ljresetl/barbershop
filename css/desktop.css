@@ -20,7 +20,6 @@
 }
 
 .svg-logo {
-  /* left: 55px; */
   top: 22px;
 }
 
@@ -281,10 +280,8 @@
   padding-left: 120px;
 }
 
-.svg-p {
-  padding-left: 215px;
-}
-
-.footer-social {
-  padding-right: 215px;
+.footer-wrapper {
+  max-width: 1580px;
+  margin: 0 auto;
+  justify-content: space-evenly;
 }
