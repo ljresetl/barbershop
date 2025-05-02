@@ -413,6 +413,7 @@
 
 /* section-contact */
 .container-section-contact {
+  background-image: url("../images/section-contact768.png");
   min-width: 690px;
   min-height: 449px;
   justify-content: flex-start;

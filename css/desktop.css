@@ -230,6 +230,7 @@
 }
 
 .container-section-contact {
+  background-image: url("../images/section-contact1600.png");
   max-width: 785px;
   width: 50%;
   height: 625px;
